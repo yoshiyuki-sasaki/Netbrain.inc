@@ -12,5 +12,6 @@ $(function() {
 
 		$('html, body').animate({scrollTop:target_top}, 500);
 	});
+	
 });
 /** end of Function **/
