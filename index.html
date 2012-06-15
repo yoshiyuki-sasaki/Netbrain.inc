@@ -25,8 +25,11 @@ Description: Nothing special.
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/bootstrap-modal.js"></script>
 <script type="text/javascript" src="js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+<script type="text/javascript" src="js/jquery.gallery.js"></script>
 <script>
 	$(document).ready(function () {
+		$('#gallery-box').gallery();
 		$('#Company-page').modal("hide");
 		$('#Service-page').modal("hide");
 		$('#Recriut-page').modal("hide");
@@ -157,7 +160,26 @@ Description: Nothing special.
 		</div>
 		
 		<!-- CSS3 gallery content -->
-		<div id="gallery-box"></div>
+		<div id="gallery-box" class="gallery-box">
+				<div class="dg-wrapper">
+					<a data-toggle="modal" href="#Recriut-page"><img src="img/3Dgallery/1.jpg" alt="image01"><div>http://www.colazionedamichy.it/</div></a>
+					<a href="#"><img src="img/3Dgallery/2.jpg" alt="image02"><div>http://www.percivalclo.com/</div></a>
+					<a href="#"><img src="img/3Dgallery/3.jpg" alt="image03"><div>http://www.wanda.net/fr</div></a>
+					<a href="#"><img src="img/3Dgallery/4.jpg" alt="image04"><div>http://lifeingreenville.com/</div></a>
+					<a href="#"><img src="img/3Dgallery/5.jpg" alt="image05"><div>http://circlemeetups.com/</div></a>
+					<a href="#"><img src="img/3Dgallery/6.jpg" alt="image06"><div>http://www.castirondesign.com/</div></a>
+					<a href="#"><img src="img/3Dgallery/7.jpg" alt="image07"><div>http://www.foundrycollective.com/</div></a>
+					<a href="#"><img src="img/3Dgallery/8.jpg" alt="image08"><div>http://www.mathiassterner.com/home</div></a>
+					<a href="#"><img src="img/3Dgallery/9.jpg" alt="image09"><div>http://learnlakenona.com/</div></a>
+					<a href="#"><img src="img/3Dgallery/10.jpg" alt="image10"><div>http://www.neighborhood-studio.com/</div></a>
+					<a href="#"><img src="img/3Dgallery/11.jpg" alt="image11"><div>http://www.beckindesign.com/</div></a>
+					<a href="#"><img src="img/3Dgallery/12.jpg" alt="image12"><div>http://kicksend.com/</div></a>
+				</div>
+				<nav>	
+					<span class="dg-prev">&lt;</span>
+					<span class="dg-next">&gt;</span>
+				</nav>
+		</div>
 		
 		<br style="clear: both;" >
 	</div>
