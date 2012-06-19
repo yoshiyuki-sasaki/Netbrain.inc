@@ -1,0 +1,56 @@
+#jpreOverlay {
+	background-color: #000000;
+}
+#jpreSlide{
+	font-size:22px;
+	font-weight:bold;
+	color:#ccc;
+	text-align:center;
+	width:50%;
+	height:30%;
+}
+#jpreLoader{
+	width:300px;
+	height:25px;
+	border:1px inset #888;
+	border-radius:25px;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+}
+
+#jpreBar {
+	background:#0DA1D5 url(../img/loading/bar.png);
+	border-radius:25px;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+}
+
+#jprePercentage {
+	color:#ccc;
+	font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-weight:bold;
+	text-align:center;
+	text-shadow:1px 1px 1px #333;
+	top:-100%;
+}
+
+#jSplash{
+	line-height:200%;
+}
+
+#jSplash h1{
+	display:block;
+	text-shadow:2px 2px 2px #888;
+	margin:10px 0;
+	color:#ffffff;
+}
+
+#jSplash h2{
+	display:block;
+	font-size:18px;
+	margin:0;
+	line-height:175%;
+	color:#ffffff;
+}
+
+
