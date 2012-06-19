@@ -19,25 +19,52 @@ $(function() {
 });
 /** end of Function **/
 
+/* ==============================================
+ Check whether clienet device is iPhone or not 
+ ===============================================*/
+function checkDevice(){
+
+	num = 0;
+
+	if ((navigator.userAgent.indexOf('iPhone') > 0 ) 
+		|| navigator.userAgent.indexOf('iPod') > 0 || 
+		navigator.userAgent.indexOf('Android') > 0) {
+		
+		num = 1;
+		
+	}else{
+	
+		num = 0;
+
+	}
+	
+	return num;
+
+}
+
 /* =======================
  pre-loader activate
  ========================*/
 function ImageLoader(){
 
-	var timer;
-	$('body').jpreLoader({
-		splashID: "#jSplash",
-		splashFunction: function() {  //passing Splash Screen script to jPreLoader
-			$('#jSplash').children('section').not('.selected').hide();
-			$('#jSplash').hide().fadeIn(800);
-			
-			timer = setInterval(function() {
-				splashRotator();
-			}, 5000);
-		}
-	}, function() {	//jPreLoader callback function
-		clearInterval(timer);
-	});
+	// Do not this process if device was iPhone or simillar //
+	if (checkDevice() == 0){
+
+		var timer;
+		$('body').jpreLoader({
+			splashID: "#jSplash",
+			splashFunction: function() {  //passing Splash Screen script to jPreLoader
+				$('#jSplash').children('section').not('.selected').hide();
+				$('#jSplash').hide().fadeIn(800);
+				
+				timer = setInterval(function() {
+					splashRotator();
+				}, 5000);
+			}
+		}, function() {	//jPreLoader callback function
+			clearInterval(timer);
+		});
+	}
 }
 
 /* =======================
