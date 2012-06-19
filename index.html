@@ -3,8 +3,7 @@
 Design by Shoichi Mori 
 Start from 31/05/12
 http://www.shochimori.com
-Released for Netbarin.inc in the name of friendship
-
+Released for Netbarin.inc 
 Title      : Netbarin.inc offical site
 Version    : 1.0
 Released   : undeifined
@@ -15,32 +14,62 @@ Description: Nothing special.
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Netbrain.inc 株式会社ネットブレイン</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+<meta name="keywords" content="Netbrain.inc 株式会社ネットブレイン　東池袋" />
+<meta name="description" content="私たちは、
+通信とコンピュータを融合したシステムソリューション技術で 社会に貢献するとともに、
+お客さまの利便性向上のため、たゆまない努力を続けます。" />
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 <link href="css/default.css" rel="stylesheet" type="text/css"/>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="css/jpreloader.css" rel="stylesheet" />
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/bootstrap-modal.js"></script>
 <script type="text/javascript" src="js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="js/jpreLoader.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+<script type="text/javascript" src="js/jquery.gallery.js"></script>
+
 <script>
 	$(document).ready(function () {
+		// web-image pre-loader
+		ImageLoader();
+		// 3D-image gallery
+		$('#gallery-box').gallery();
+		
+		// bootstarp sub windows //
 		$('#Company-page').modal("hide");
 		$('#Service-page').modal("hide");
 		$('#Recriut-page').modal("hide");
-
 	});
 </script>
 </head>
+
 <body>
+
+<!-- This section is for preloading screen -->
+<div id=jSplash>
+	<section class=selected>
+		<h1>Netbrain.inc</h1>
+		<h2>http://net-brain.co.jp</h2>
+	</section>
+	<section>
+		<img src="img/loading/loading02.png" alt="man with whithboard">
+	</section>
+	<section>
+		<h1>Netbrain.inc</h1>
+		<h2>http://net-brain.co.jp</h2>
+	</section>
+	<section>
+		<img src="img/loading/loading01.gif" alt="we're creative">
+	</section>
+</div>
+<!-- End of preloading Screen -->
 
 <!-- start header -->
 <div id="header">
-	
 	<div id="header-line"></div>
-
 	<div id="logo">
 		<div id="logo_image"><a href="#"><img src="img/logo.png"></a></div>
 		<p><a href="#">株式会社ネットブレイン</a></p>
@@ -59,14 +88,12 @@ Description: Nothing special.
 <hr />
 <!-- end header -->
 
-<!-- start modal element -->
-
 <!--　page 1 ----------------------->
 
 	<div class="modal hide fade" id="Company-page">
 	  <div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal">×</button>
-		<img src="img/page1-title.png" alt="Company -会社案内">
+		<img src="img/scene/page1-title.png" alt="Company -会社案内">
 	  </div>
 	  <div class="modal-body">
 		<div class="image-field">
@@ -93,7 +120,7 @@ Description: Nothing special.
 	<div class="modal hide fade" id="Service-page">
 	  <div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal">×</button>
-		<img src="img/page2-title.png" alt="Service -事業紹介">
+		<img src="img/scene/page2-title.png" alt="Service -事業紹介">
 	  </div>
 	  <div class="modal-body">
 		<div class="image-field">
@@ -117,7 +144,7 @@ Description: Nothing special.
 	<div class="modal hide fade" id="Recriut-page">
 	  <div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal">×</button>
-		<img src="img/page3-title.png" alt="Recruit -採用情報-">
+		<img src="img/scene/page3-title.png" alt="Recruit -採用情報-">
 	  </div>
 	  <div class="modal-body">
 		<div class="image-field">
@@ -135,9 +162,8 @@ Description: Nothing special.
 		<a href="#" class="btn" data-dismiss="modal">Close</a>
 	  </div>
 	</div>
-
-<!-- end modal -->
-
+<!-- end sub-page -->
+	
 <!-- start page -->
 <div id="wrapper">
 
@@ -148,16 +174,28 @@ Description: Nothing special.
 		<div id="contents-box">
 		
 			<div id="content1">
-				<img src="img/message1.png" alt="Think Smarter, Be Creative">
+				<img src="img/message/message1.png" alt="Think Smarter, Be Creative">
 			</div>
 			
 			<div id="content2">
-				<img src="img/message2.png" alt="company statement">
+				<img src="img/message/message2.png" alt="company statement">
 			</div>
 		</div>
 		
 		<!-- CSS3 gallery content -->
-		<div id="gallery-box"></div>
+		<div id="gallery-box" class="gallery-box">
+			<div class="sub-gallery-box">
+				<div class="dg-wrapper">
+					<a data-toggle="modal" href="#Service-page"><img src="img/3Dgallery/gallery01.jpg" alt="Service"><div>事業紹介</div></a>
+					<a data-toggle="modal" href="#Recriut-page"><img src="img/3Dgallery/gallery02.jpg" alt="Recriut"><div>採用情報</div></a>
+					<a data-toggle="modal" href="#Company-page"><img src="img/3Dgallery/gallery03.jpg" alt="Company"><div>会社案内</div></a>
+				</div>
+				<nav>	
+					<span class="dg-prev"></span>
+					<span class="dg-next"></span>
+				</nav>
+			</div>
+		</div>
 		
 		<br style="clear: both;" >
 	</div>
@@ -173,10 +211,10 @@ Description: Nothing special.
 	
 		<div id="sns">
 			<a href="#" class="sns_botton" target="_blank">
-				<img src="img/facebook.jpg" alt="facebook icon" width="90" height="27">
+				<img src="img/footer/facebook.jpg" alt="facebook icon" width="90" height="27">
 			</a>
-			<a href="#" class="sns_botton" target="_blank">
-				<img src="img/twitter.png" alt="twitter icon" width="160" height="27">
+			<a href="https://twitter.com/#!/IncNetbrain" class="sns_botton" target="_blank">
+				<img src="img/footer/twitter.png" alt="twitter icon" width="160" height="27">
 			</a>
 		</div>
 	
@@ -189,7 +227,7 @@ Description: Nothing special.
 		<ul class="clearfix">
 			<li class="ftCompany">システムインテグレートカンパニー<br>株式会社ネットブレイン</li>
 			<li class="ftAddress">〒170-0013　東京都<br>豊島区東池袋一丁目48-10　25山京ビル8F</li>
-			<li class="ftTell"><img src="img/footerTell.gif" alt="Tel:03-5960-6848" width="138" height="16"><br><a href="mailto:nbi@net-brain.co.jp">mail:nbi@net-brain.co.jp</a></li>
+			<li class="ftTell"><img src="img/footer/footerTell.gif" alt="Tel:03-5960-6855" width="158" height="20"><br><a href="mailto:nbi@net-brain.co.jp">mail:nbi@net-brain.co.jp</a></li>
 		</ul>
 	</div>
 	<!-- end #footerCont -->
@@ -211,8 +249,7 @@ Description: Nothing special.
 
 </footer>
 <!-- end footer.global -->
-
-<!-- end footer -->
+<!-- end all footer -->
 </div>
 </body>
 </html>
