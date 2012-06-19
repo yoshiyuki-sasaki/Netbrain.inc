@@ -64,6 +64,8 @@ function ImageLoader(){
 		}, function() {	//jPreLoader callback function
 			clearInterval(timer);
 		});
+	}else{
+		$('#jSplash').css('display', 'none').remove();
 	}
 }
 
