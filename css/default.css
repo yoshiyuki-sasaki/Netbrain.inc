@@ -10,7 +10,7 @@ body {
 	padding: 0px;
 	background: #ECF0EC url(../img/carpet.png) repeat;
 	text-align: justify;
-	font-family: 'Arvo', serif;
+	font-family: "framd",Arial, Helvetica, sans-serif; 
 	font-size: 14px;
 	color: #303030;
 }
@@ -18,7 +18,7 @@ body {
 h1, h2, h3 {
 	font: 1.82em;
 	font-weight: normal;
-	font-family: 'Arvo', serif;
+	font-family: "framd",Arial, Helvetica, sans-serif; 
 	letter-spacing: -2px;
 	font-weight: 400px;
 	color: #000000;
@@ -40,6 +40,20 @@ a:hover {
 hr {
 	display: none;
 }
+
+/*-----------------------------*
+ * Web font setting
+ *-----------------------------*/
+@font-face {
+    font-family: 'framd';
+    src: url('../font/framd.eot');
+    src: url('../font/framd.eot?#iefix') format('embedded-opentype'),
+         url('../font/framd.woff') format('woff'),
+         url('../font/framd.ttf') format('truetype'),
+         url('../font/framd.svg#framd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /*-----------------------------*
  * Header 
  *-----------------------------*/
@@ -48,7 +62,7 @@ hr {
 	height: 150px;
 	margin: 0px auto;
 	z-index:2;
-	position:relative;
+	/** position:relative; **/
 }
 
 /* Header line with shadow */
@@ -109,7 +123,7 @@ hr {
 #menu p{
 	margin: 0px 0px 0px 0px;
 	text-align:center;
-	font-family: "Franklin Gothic Medium",Arial, Helvetica, sans-serif; 
+	font-family: "framd",Arial, Helvetica, sans-serif; 
 	font-weight: normal;
 	font-size: 12.5px;
 }
@@ -150,7 +164,7 @@ hr {
 	**/
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: "Franklin Gothic Medium",Arial, Helvetica, sans-serif; 
+	font-family: "framd",Arial, Helvetica, sans-serif; 
 	font-weight: normal;
 	font-size: 15px;
 	color: #000000;
@@ -378,19 +392,15 @@ footer.global #pageTop #sns .sns_botton{
 	padding:0 10px 0 10px;
 }
 
-
-
 footer.global #pageTop a{
 	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: "Franklin Gothic Medium",Arial, Helvetica, sans-serif; 
+	font-family: "framd",Arial, Helvetica, sans-serif; 
 	font-weight: normal;
 	font-size: 15px;
 	color: #000000;
 }
-
-
 
 footer.global #footerCont{
 	width:978px;
@@ -467,7 +477,7 @@ footer.global #footerBtm #copyright{
 	position:absolute;
 	top:19px;
 	right:0;
-	font-family: "Franklin Gothic Medium",Arial, Helvetica, sans-serif; 
+	font-family: "framd",Arial, Helvetica, sans-serif; 
 	font-weight: normal;
 	font-size: 12.5px;
 }

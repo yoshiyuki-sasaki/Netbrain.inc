@@ -43,14 +43,16 @@
 	text-shadow:2px 2px 2px #888;
 	margin:10px 0;
 	color:#ffffff;
+	letter-spacing: 0px;
 }
 
 #jSplash h2{
 	display:block;
-	font-size:18px;
+	font-size:14.5px;
 	margin:0;
 	line-height:175%;
 	color:#ffffff;
+	letter-spacing: 0px;
 }
 
 

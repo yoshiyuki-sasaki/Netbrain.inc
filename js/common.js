@@ -19,6 +19,38 @@ $(function() {
 });
 /** end of Function **/
 
+
+/* ==============================================
+ menu bar anchor hover effect
+ ===============================================*/
+function hoverEffect(){
+	
+	var divSet1 = "#menu a";
+	var divSet2 = ".navi a";
+	var divSet3 = "#backscroll a";
+	var divSet4 = "#sns a";
+	var speed = "fast";
+	
+	$(divSet1).hover(
+			function(){$(this).stop(true, true).animate({opacity: 0.5}, speed);}, 
+			function(){$(this).stop(true, true).animate({opacity: 1}, speed);}
+		); 
+	$(divSet2).hover(
+			function(){$(this).stop(true, true).animate({opacity: 0.5}, speed);}, 
+			function(){$(this).stop(true, true).animate({opacity: 1}, speed);}
+		); 
+	$(divSet3).hover(
+			function(){$(this).stop(true, true).animate({opacity: 0.5}, speed);}, 
+			function(){$(this).stop(true, true).animate({opacity: 1}, speed);}
+	); 
+	
+	$(divSet4).hover(
+			function(){$(this).stop(true, true).animate({opacity: 0.5}, speed);}, 
+			function(){$(this).stop(true, true).animate({opacity: 1}, speed);}
+	); 
+
+}
+
 /* ==============================================
  Check whether clienet device is iPhone or not 
  ===============================================*/
@@ -49,13 +81,19 @@ function ImageLoader(){
 
 	// Do not this process if device was iPhone or simillar //
 	if (checkDevice() == 0){
+	
+		$('#header-line').css({"width": "0px"});
+		$('#logo').css({opacity: 0});
+		$('#menu').css({opacity: 0});
+		$('#wrapper').hide();
+		$('.global').hide();
 
 		var timer;
 		$('body').jpreLoader({
 			splashID: "#jSplash",
 			splashFunction: function() {  //passing Splash Screen script to jPreLoader
 				$('#jSplash').children('section').not('.selected').hide();
-				$('#jSplash').hide().fadeIn(800);
+				$('#jSplash').hide().fadeIn(300);
 				
 				timer = setInterval(function() {
 					splashRotator();
@@ -63,6 +101,17 @@ function ImageLoader(){
 			}
 		}, function() {	//jPreLoader callback function
 			clearInterval(timer);
+			
+			$('#header-line').animate({"width":"970px"}, 1500, function() {
+				$('#logo').animate({opacity:1}, 500, function() {
+					$('#menu').animate({opacity:1}, 500, function() {
+					
+						$('#wrapper').fadeIn(2500);
+						$('.global').fadeIn(2500);
+						
+					});
+				});
+			});
 		});
 	}else{
 		$('#jSplash').css('display', 'none').remove();
@@ -88,5 +137,3 @@ function splashRotator(){
 		$(next).fadeIn(800);
 	});
 }
-
-

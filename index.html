@@ -21,7 +21,7 @@ Description: Nothing special.
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 <link href="css/default.css" rel="stylesheet" type="text/css"/>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-<link href="css/jpreloader.css" rel="stylesheet" />
+<link href="css/jpreloader.css" rel="stylesheet" type="text/css"/>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
@@ -33,15 +33,17 @@ Description: Nothing special.
 
 <script>
 	$(document).ready(function () {
-		// web-image pre-loader
+		// web-image pre-loader //
 		ImageLoader();
-		// 3D-image gallery
+		// 3D-image gallery  //
 		$('#gallery-box').gallery();
-		
+		// a hover effect //
+		hoverEffect();
 		// bootstarp sub windows //
 		$('#Company-page').modal("hide");
 		$('#Service-page').modal("hide");
 		$('#Recriut-page').modal("hide");
+		
 	});
 </script>
 </head>
