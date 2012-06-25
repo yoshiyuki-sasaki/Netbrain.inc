@@ -19,11 +19,10 @@ $(function() {
 });
 /** end of Function **/
 
-
 /* ==============================================
  menu bar anchor hover effect
  ===============================================*/
-function hoverEffect(){
+function HoverEffect(){
 	
 	var divSet1 = "#menu a";
 	var divSet2 = ".navi a";
@@ -74,7 +73,7 @@ function checkDevice(){
 
 }
 
-/* =======================
+/*========================
  pre-loader activate
  ========================*/
 function ImageLoader(){
@@ -118,7 +117,7 @@ function ImageLoader(){
 	}
 }
 
-/* =======================
+/*========================
  pre-loader movie control
  ========================*/
 function splashRotator(){
@@ -137,3 +136,49 @@ function splashRotator(){
 		$(next).fadeIn(800);
 	});
 }
+
+/* ======================================
+ image-gallery for IE or modern browser
+ =======================================*/
+ function ImageGallery(){
+ 
+ 	if($.browser.webkit || $.browser.mozilla) {
+		$('#slides').hide();
+		// 3D-image gallery  //
+		$('#gallery-box').gallery();
+	}else{
+		$('.3d-gallery').hide();
+		// Slideshow //
+		$('#slides').slides({
+			play: 10000,
+			pause: 2500,
+			hoverPause: true,
+			animationStart: function(current){
+				$('.caption').animate({
+					bottom:-35
+				},100);
+				if (window.console && console.log) {
+					// example return of current slide number
+					console.log('animationStart on slide: ', current);
+				};
+			},
+			animationComplete: function(current){
+				$('.caption').animate({
+					bottom:0
+				},200);
+				if (window.console && console.log) {
+					// example return of current slide number
+					console.log('animationComplete on slide: ', current);
+				};
+			},
+			slidesLoaded: function() {
+				$('.caption').animate({
+					bottom:0
+				},200);
+			}
+		});
+	}
+ 
+ }
+ 
+ 

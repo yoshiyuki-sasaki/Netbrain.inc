@@ -39,6 +39,7 @@
 }
 
 #jSplash h1{
+	font-family: Franklin Gothic Demi,Arial, Helvetica, sans-serif; 
 	display:block;
 	text-shadow:2px 2px 2px #888;
 	margin:10px 0;
@@ -47,6 +48,7 @@
 }
 
 #jSplash h2{
+	font-family: Franklin Gothic Demi,Arial, Helvetica, sans-serif; 
 	display:block;
 	font-size:14.5px;
 	margin:0;

@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
-Design by Shoichi Mori 
+Design by Shoichi Mori, Asaga Hideyuki
 Start from 31/05/12
 http://www.shochimori.com
 Released for Netbarin.inc 
@@ -14,38 +14,52 @@ Description: Nothing special.
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Netbrain.inc 株式会社ネットブレイン</title>
-<meta name="keywords" content="Netbrain.inc 株式会社ネットブレイン　東池袋" />
+<meta name="keywords" content="Netbrain.inc 株式会社ネットブレイン　Ikebukuro,東池袋" />
 <meta name="description" content="私たちは、
 通信とコンピュータを融合したシステムソリューション技術で 社会に貢献するとともに、
 お客さまの利便性向上のため、たゆまない努力を続けます。" />
-<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+
 <link href="css/default.css" rel="stylesheet" type="text/css"/>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
 <link href="css/jpreloader.css" rel="stylesheet" type="text/css"/>
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/bootstrap-modal.js"></script>
 <script type="text/javascript" src="js/bootstrap-transition.js"></script>
 <script type="text/javascript" src="js/jpreLoader.min.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
 <script type="text/javascript" src="js/jquery.gallery.js"></script>
+<script type="text/javascript" src="js/slides.min.jquery.js"></script>
 
+<!--[if lt IE 9]>
+	<link href="IEalert/style/style.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="IEalert/iealert.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("body").iealert();
+		});
+	</script>
+<![endif]-->
+
+<![if gte IE 9]>
 <script>
 	$(document).ready(function () {
 		// web-image pre-loader //
-		ImageLoader();
-		// 3D-image gallery  //
-		$('#gallery-box').gallery();
-		// a hover effect //
-		hoverEffect();
+		ImageLoader();	
+		// Image Gallery //
+		ImageGallery();
+		// anchor hover effect //
+		HoverEffect();
 		// bootstarp sub windows //
 		$('#Company-page').modal("hide");
 		$('#Service-page').modal("hide");
-		$('#Recriut-page').modal("hide");
-		
+		$('#Recriut-page').modal("hide");	
+
 	});
 </script>
+<![endif]>
+
 </head>
 
 <body>
@@ -106,10 +120,88 @@ Description: Nothing special.
 			<div class="imageA-2 fullsize" style="background:url(img/scene/003.jpg) no-repeat center center;"></div>
 		</div>
 		<div class="body-left">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+<p>
+最高の道である愛
+たとえ人間の不思議な言葉
+天使の不思議な言葉を話しても
+愛がなければ私は鳴る銅鑼 響くシンバル
+
+たとえ予言の賜物があり
+あらゆる神秘 あらゆる知識に通じていても
+愛がなければ私は何者でもない
+
+たとえ全財産を貧しい人に分け与え
+たとえ賞賛を受けるために自分の身を引き渡しても
+愛がなければ私には何の益にもならない
+
+愛は寛容なもの 慈悲深いものは愛
+愛は妬まず昂ぶらず誇らない
+見苦しい振る舞いをせず 自分の利益を求めず
+怒らず 人の悪事を数えたてない
+
+愛は決して滅びさることはない
+予言の賜物ならば廃りもしよう
+不思議な言葉ならばやみもしよう
+知識ならば無用となりもしよう
+
+我々が知るのは一部分
+また預言するのも一部分であるゆえに
+完全なものが到来するとき
+部分的なものは廃れさる
+
+私は幼い子供であったとき
+幼い子供のように語り
+幼い子供のように考え
+幼い子供のように思いをめぐらした
+ただ 一人前のものになった時 幼い子供のことはやめにした
+
+我々が今見ているのは ぼんやりと鏡に写っているもの
+そのときにみるのは 顔と顔をあわせてのもの
+私が今知っているのは一部分
+その時には自分がすでに完全に知られているように
+私は完全に知るようになる
+
+だから 引き続き残るのは 信仰 希望 愛 この３つ
+このうち もっとも優れているのは 愛
+
+最高の道である愛
+たとえ人間の不思議な言葉
+天使の不思議な言葉を話しても
+愛がなければ私は鳴る銅鑼 響くシンバル
+
+たとえ予言の賜物があり
+あらゆる神秘 あらゆる知識に通じていても
+愛がなければ私は何者でもない
+
+たとえ全財産を貧しい人に分け与え
+たとえ賞賛を受けるために自分の身を引き渡しても
+愛がなければ私には何の益にもならない
+
+愛は寛容なもの 慈悲深いものは愛
+愛は妬まず昂ぶらず誇らない
+見苦しい振る舞いをせず 自分の利益を求めず
+怒らず 人の悪事を数えたてない
+
+愛は決して滅びさることはない
+予言の賜物ならば廃りもしよう
+不思議な言葉ならばやみもしよう
+知識ならば無用となりもしよう
+
+</P>
 		</div>
 		<div class="body-right">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+<p>
+古今東西、いろんな神様がございます。外国の神様、キリスト教やイスラム教の神様なんかは人間どもの雑事を一手に引き受けて、全責任を負ってらっしゃるそうで、まことにご苦労な話でございますな。
+
+　そこへ行きますと、日本の国の神様はこれはうってかわって権限の一極集中ということはございません。一応、総理大臣のような神様はいらっしゃるんでございますが、さて、日常の細々としたことは、というとそれぞれ担当の神様が控えてらっしゃって、すべてそちらにお任せでございます。中でも縁結びなんか、合議制で決められるんですな。昔は神無月と申しました。全国の神様が出雲へ集まって、一ヶ月にわたる会議を開きます。全国縁結び連絡協議会ですな。若い男女のどれとどれをくっつけるか、ここで話し合って決める。だから、妙なのとくっつけられたり、三角関係になったりしても文句を言っていく先がどうもハッキリいたしません。ま、今も昔も、上つ方のありようは似たようなものの様でございます。
+
+　ま、そんなこんなで縁あって夫婦ができあがります。やがて．．．えぇと．．．まあ、いろんなことをやっている間に、めでたく御懐妊ということになる。十月十日たちますてぇと、おぎゃあとベビーが生まれて参るという寸法でございます。
+
+　さて、めでたくやや子が誕生という段になりますと、今も昔も変わらず、最初に親御さんが悩まされるのが、お子様のお名前ですな。こればっかりは本人に相談するわけにも参りません。名前にもその時々の流行というモノがありますから、古臭い名前はいやだ、といって派手過ぎるのも品が無いし、平凡なのは可哀相だけど、妙な名をつけてあとで怨まれてもつまらないし．．．などといろんな事を考えまして、結局誰かに相談しよう、なんてことになりますな。
+
+　よく当たると評判の易者のところへいく、近所の物知りの御隠居に相談する、国のおじいちゃん、おばあちゃんにたずねてみる．．．いろいろございますが、昔はてぇと、旦那寺の和尚さんに名付け親になってもらうなんてことがよくありましたそうで．．．
+</P>
+
 		</div>	
 	</div>
 	  <div class="modal-footer">
@@ -187,15 +279,41 @@ Description: Nothing special.
 		<!-- CSS3 gallery content -->
 		<div id="gallery-box" class="gallery-box">
 			<div class="sub-gallery-box">
-				<div class="dg-wrapper">
-					<a data-toggle="modal" href="#Service-page"><img src="img/3Dgallery/gallery01.jpg" alt="Service"><div>事業紹介</div></a>
-					<a data-toggle="modal" href="#Recriut-page"><img src="img/3Dgallery/gallery02.jpg" alt="Recriut"><div>採用情報</div></a>
-					<a data-toggle="modal" href="#Company-page"><img src="img/3Dgallery/gallery03.jpg" alt="Company"><div>会社案内</div></a>
+				<div class="3d-gallery">
+					<div class="dg-wrapper">
+						<a data-toggle="modal" href="#Service-page"><img src="img/3Dgallery/gallery01.jpg" alt="Service"><div>事業紹介</div></a>
+						<a data-toggle="modal" href="#Recriut-page"><img src="img/3Dgallery/gallery02.jpg" alt="Recriut"><div>採用情報</div></a>
+						<a data-toggle="modal" href="#Company-page"><img src="img/3Dgallery/gallery03.jpg" alt="Company"><div>会社案内</div></a>
+					</div>
+					<nav>	
+						<span class="dg-prev"></span>
+						<span class="dg-next"></span>
+					</nav>
 				</div>
-				<nav>	
-					<span class="dg-prev"></span>
-					<span class="dg-next"></span>
-				</nav>
+				<div id="slides">
+					<div class="slides_container">
+						<div class="slide">
+							<a data-toggle="modal" href="#Service-page"><img src="img/3Dgallery/gallery01.jpg" width="482" height="316" alt="Service"></a>
+							<div class="caption" style="bottom:0">
+								<p>事業紹介</p>
+							</div>
+						</div>
+						<div class="slide">
+							<a data-toggle="modal" href="#Recriut-page"><img src="img/3Dgallery/gallery02.jpg" width="482" height="316" alt="Recriut"></a>
+							<div class="caption">
+								<p>採用情報</p>
+							</div>
+						</div>
+						<div class="slide">
+							<a data-toggle="modal" href="#Company-page"><img src="img/3Dgallery/gallery03.jpg" width="482" height="316" alt="Company"></a>
+							<div class="caption">
+								<p>会社案内</p>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="prev"><img src="img/3Dgallery/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+					<a href="#" class="next"><img src="img/3Dgallery/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+				</div>
 			</div>
 		</div>
 		

@@ -1,5 +1,5 @@
 /*
-Design by Shoichi Mori 
+Design by Shoichi Mori, Asaga Hideyuki
 Start from 31/05/12
 http://www.shochimori.com
 Released for Netbarin.inc
@@ -18,7 +18,7 @@ body {
 h1, h2, h3 {
 	font: 1.82em;
 	font-weight: normal;
-	font-family: "framd",Arial, Helvetica, sans-serif; 
+	font-family:'ÉqÉâÉMÉmäpÉS Pro W3','Hiragino Kaku Gothic Pro','ÉÅÉCÉäÉI',Meiryo,'ÇlÇr ÇoÉSÉVÉbÉN',sans-serif;
 	letter-spacing: -2px;
 	font-weight: 400px;
 	color: #000000;
@@ -27,6 +27,7 @@ h1, h2, h3 {
 p, ol, ul {
 	line-height: 1.67em;
 	list-style: none;
+	font-family:'ÉqÉâÉMÉmäpÉS Pro W3','Hiragino Kaku Gothic Pro','ÉÅÉCÉäÉI',Meiryo,'ÇlÇr ÇoÉSÉVÉbÉN',sans-serif;
 }
 
 a {
@@ -198,7 +199,7 @@ hr {
 	width: 530px;
 	height:220px;
 	margin-top: 280px;
-	margin-left:50%;
+	margin-left:42%;
 	padding: 10px 10px 10px 10px;
 }
 
@@ -268,7 +269,6 @@ hr {
 	width: 1000px;
 	height:440px;
 	margin: 0 auto;
-	/*background:#ccffcc;*/
 }
 
 .dg-wrapper{
@@ -330,14 +330,6 @@ hr {
 }
 
 .gallery-box nav{
-	/*width: 58px;
-	position: absolute;
-	z-index: 1000;
-	bottom: 40px;
-	top: 88%;
-	left: 50%;
-	margin-left: -29px;
-	background:#9400D3;*/
 }
 
 .gallery-box nav span{
@@ -359,6 +351,88 @@ hr {
 	background: transparent url(../img/3Dgallery/arrow-next.png) no-repeat top left;
 	left:960px;
 }
+
+/*
+	Slideshow
+*/
+
+#slides {
+	width:482px;
+	height:316px;
+	margin: 0 auto;
+	position:relative;
+	top:60px;
+	left:4px;
+	z-index:100;
+	-moz-box-shadow: 	3px 3px 5px 6px #4c4c4c;
+	-webkit-box-shadow: 3px 3px 5px 6px #4c4c4c;
+	box-shadow: 		3px 3px 5px 6px #4c4c4c;
+}
+
+.slides_container {
+	width:482px;
+	overflow:hidden;
+	position:relative;
+	top:-26px;
+	display:none;
+}
+
+.slides_container div.slide {
+	width:482px;
+	height:316px;
+	display:block;
+}
+
+.slide a img {
+	opacity: 0.9;
+}
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:120px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+	opacity: 0.8;
+}
+
+#slides .next {
+	left:497px;
+	opacity: 0.8;
+}
+
+#slides .prev:hover {
+	opacity: 1;
+}
+
+#slides .next:hover {
+	opacity: 1;
+}
+
+.caption {
+	z-index:500;
+	position:absolute;
+	bottom:-35px;
+	left:0;
+	height:30px;
+	padding:5px 20px 0 20px;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	width:540px;
+	font-size:1.3em;
+	line-height:1.33;
+	color:#fff;
+	border-top:1px solid #000;
+	text-shadow:none;
+}
+
+.caption p {
+	font:normal 70%/1.5 Helvetica, Arial, sans-serif;
+	margin:0; padding:0; border:0; outline:0;
+}
+
 /*-----------------------------*
  * GLOBAL FOOTER
  *-----------------------------*/
@@ -380,6 +454,11 @@ footer.global #pageTop #backscroll{
 	margin:0px 10px 0 10px;
 	float:right;
 }
+
+footer.global #pageTop #backscroll p{
+	font-family: "framd",Arial, Helvetica, sans-serif; 
+}
+
 
 footer.global #pageTop #sns{
 	width:500px;
