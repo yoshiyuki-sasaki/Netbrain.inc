@@ -1,6 +1,6 @@
-/* =======================
- click and smooth slidert
- ========================*/
+/* ==============================================
+ click and smooth scroll
+ ===============================================*/
 $(function() {
 
 	$(".scroll").click(function(event){
@@ -17,8 +17,6 @@ $(function() {
 	});
 	
 });
-/** end of Function **/
-
 /* ==============================================
  menu bar anchor hover effect
  ===============================================*/
@@ -49,9 +47,8 @@ function HoverEffect(){
 	); 
 
 }
-
 /* ==============================================
- Check whether clienet device is iPhone or not 
+ Check clienet device for only smart-phone
  ===============================================*/
 function checkDevice(){
 
@@ -63,19 +60,13 @@ function checkDevice(){
 		
 		num = 1;
 		
-	}else{
-	
-		num = 0;
-
-	}
+	}else{ num = 0; }
 	
 	return num;
-
 }
-
-/*========================
- pre-loader activate
- ========================*/
+/* ==============================================
+ Pre Image loader activated
+ ===============================================*/
 function ImageLoader(){
 
 	// Do not this process if device was iPhone or simillar //
@@ -106,7 +97,10 @@ function ImageLoader(){
 					$('#menu').animate({opacity:1}, 500, function() {
 					
 						$('#wrapper').fadeIn(2500);
-						$('.global').fadeIn(2500);
+						$('.global').fadeIn(3000);
+						
+						// Add Image Gallery After finished loading contents and images//
+						ImageGallery();
 						
 					});
 				});
@@ -116,10 +110,9 @@ function ImageLoader(){
 		$('#jSplash').css('display', 'none').remove();
 	}
 }
-
-/*========================
- pre-loader movie control
- ========================*/
+/* ==============================================
+ Pre Loading image controll
+ ===============================================*/
 function splashRotator(){
 
 	var cur = $('#jSplash').children('.selected');
@@ -136,49 +129,59 @@ function splashRotator(){
 		$(next).fadeIn(800);
 	});
 }
-
-/* ======================================
- image-gallery for IE or modern browser
- =======================================*/
+/* ==============================================
+ Image-gallery for IE or modern browser
+ ===============================================*/
  function ImageGallery(){
  
- 	if($.browser.webkit || $.browser.mozilla) {
-		$('#slides').hide();
-		// 3D-image gallery  //
+	// Do not inculde IE //
+	
+ 	//if($.browser.webkit || $.browser.mozilla) {//
+	if(getInternetExplorerVersion() < 0){
+	
+		// Activet 3D-image gallery  //
+		$('#2D-gallery').remove();
 		$('#gallery-box').gallery();
+		
+	// If user agent is IE //
 	}else{
-		$('.3d-gallery').hide();
-		// Slideshow //
-		$('#slides').slides({
-			play: 10000,
-			pause: 2500,
-			hoverPause: true,
-			animationStart: function(current){
-				$('.caption').animate({
-					bottom:-35
-				},100);
-				if (window.console && console.log) {
-					// example return of current slide number
-					console.log('animationStart on slide: ', current);
-				};
-			},
-			animationComplete: function(current){
-				$('.caption').animate({
-					bottom:0
-				},200);
-				if (window.console && console.log) {
-					// example return of current slide number
-					console.log('animationComplete on slide: ', current);
-				};
-			},
-			slidesLoaded: function() {
-				$('.caption').animate({
-					bottom:0
-				},200);
-			}
-		});
+
+		$('#gallery-box').remove();
+		
+		var IEversion = getInternetExplorerVersion();
+		
+		// Change page layout for only IE 8.0 //
+		if(IEversion <= 8.0 ){
+
+			$('#page').css({"background-color": "#282828","width": "1280px", "height":"620px"});
+		
+		// Change page layout for only IE 9.0 and 10//
+		// IE9 もしくは 10でレイアウトが崩れるときはここで修正 //
+		}else if(IEversion > 8.0 ){
+		
+		    $('#page').css({"background-color": "#282828","width": "1280px", "height":"620px"});
+				
+		}
+		
+		$("#2D-gallery").sliderkit({auto:true, shownavitems:3, start:1 });
+
 	}
  
  }
- 
- 
+ /* ==============================================
+Check IE browser version
+ ===============================================*/
+ function getInternetExplorerVersion()
+// Returns the version of Windows Internet Explorer or a -1
+// (indicating the use of another browser).
+{
+   var rv = -1; // Return value assumes failure.
+   if (navigator.appName == 'Microsoft Internet Explorer')
+   {
+      var ua = navigator.userAgent;
+      var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+      if (re.exec(ua) != null)
+         rv = parseFloat( RegExp.$1 );
+   }
+   return rv;
+}

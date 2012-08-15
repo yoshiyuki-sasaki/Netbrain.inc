@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
+<!-----------------------------------------------------
 Design by Shoichi Mori, Asaga Hideyuki
 Start from 31/05/12
 http://www.shochimori.com
@@ -8,13 +8,14 @@ Title      : Netbarin.inc offical site
 Version    : 1.0
 Released   : undeifined
 Description: Nothing special.
--->
+------------------------------------------------------>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Netbrain.inc 株式会社ネットブレイン</title>
-<meta name="keywords" content="Netbrain.inc 株式会社ネットブレイン　Ikebukuro,東池袋" />
+<meta name="robots" content="noindex">
+<meta name="keywords" content="Netbrain.inc, Netbrain, 株式会社ネットブレイン,　Ikebukuro,東池袋" />
 <meta name="description" content="私たちは、
 通信とコンピュータを融合したシステムソリューション技術で 社会に貢献するとともに、
 お客さまの利便性向上のため、たゆまない努力を続けます。" />
@@ -30,9 +31,33 @@ Description: Nothing special.
 <script type="text/javascript" src="js/jpreLoader.min.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
 <script type="text/javascript" src="js/jquery.gallery.js"></script>
-<script type="text/javascript" src="js/slides.min.jquery.js"></script>
 
-<!--[if lt IE 9]>
+<![if IE ]>
+<script type="text/javascript" src="js/IE/jquery.sliderkit.1.9.2.pack.js"></script>
+<link href="css/IE/sliderkit-core.css" rel="stylesheet" type="text/css"  media="screen, projection">
+<link href="css/IE/sliderkit-demos.css" rel="stylesheet" type="text/css" />
+<![if IE 8]><link href="css/IE/sliderkit-demos-ie8.css" rel="stylesheet" type="text/css" /><![endif]>
+<![endif]>
+
+<!-- Only for Modern Browser -->
+<![if gte IE 8]>
+<script>
+	$(document).ready(function () {
+		// web-image pre-loader //
+		ImageLoader();
+		// anchor hover effect //
+		HoverEffect();
+		// bootstarp sub windows //
+		$('#Company-page').modal("hide");
+		$('#Service-page').modal("hide");
+		$('#Recriut-page').modal("hide");	
+		
+	});
+</script>
+<![endif]>
+
+<!-- Display Update Message for IE 6 and 7 -->
+<!--[if lt IE 8]>
 	<link href="IEalert/style/style.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="IEalert/iealert.min.js"></script>
 	<script>
@@ -41,24 +66,6 @@ Description: Nothing special.
 		});
 	</script>
 <![endif]-->
-
-<![if gte IE 9]>
-<script>
-	$(document).ready(function () {
-		// web-image pre-loader //
-		ImageLoader();	
-		// Image Gallery //
-		ImageGallery();
-		// anchor hover effect //
-		HoverEffect();
-		// bootstarp sub windows //
-		$('#Company-page').modal("hide");
-		$('#Service-page').modal("hide");
-		$('#Recriut-page').modal("hide");	
-
-	});
-</script>
-<![endif]>
 
 </head>
 
@@ -119,90 +126,102 @@ Description: Nothing special.
 			</div>
 			<div class="imageA-2 fullsize" style="background:url(img/scene/003.jpg) no-repeat center center;"></div>
 		</div>
-		<div class="body-left">
-<p>
-最高の道である愛
-たとえ人間の不思議な言葉
-天使の不思議な言葉を話しても
-愛がなければ私は鳴る銅鑼 響くシンバル
+		<div class="body-normal">
 
-たとえ予言の賜物があり
-あらゆる神秘 あらゆる知識に通じていても
-愛がなければ私は何者でもない
+			<h3>"WEBの時代をキャッチする感性"</h3>
+			<p>
+			インターネット技術が社会のインフラのひとつとして確立され、
+			ネット検索をすれば膨大な量の情報が瞬時に手に入る世界が出現しました。
+			情報だけであれば、誰でも、どこでも手に入るようになりました。しかし、
+			それをビジネスに結びつけていくには、ひと味もふた味も情報に手を加えなければなりません。
+			今まで、株式会社ネットブレインは情報通信システム分野のソフト開発を中心に手がけてまいりました。今後はその技術を基盤として、
+			モバイル用端末、Webアプリケーション分野のシステム開発を視野に入れた業容の拡大を図りたいと考えております。<br>
+			<br>
+			私たちネットブレインは、<br>
+			■ ある日、交差点の向こうの歩行者用信号機の表示方法が昨日と違うことがわかる、<br>
+			■ 馴染みの居酒屋に入ると先週となんとなく雰囲気が違うことがわかる、<br>
+			<br>
+			といった、世の中の小さな動きをキャッチできる感性を持った社員たちが集う会社でありたいと願っています。
+			小さな動きをキャッチできる感性を持った社員たちが、IT技術を駆使して、お客様のニーズにお応えできるよう努力してまいります。
+			</P>
+			<p style="text-align:right; font-weight: bold;">
+			株式会社　ネットブレイン　代表取締役<br>
+			齊藤正二<br>
+			</p>
+			
+			<div class="contents-line"></div>
+			
+			<h3>会社沿革</h3>
+			
+			<table class="history">
+				<tr>
+					<td class="time">1999年07月</td>
+					<td>東京都港区芝浦で創立</td>
+				</tr>
+				<tr>
+					<td class="time">1999年07月</td>
+					<td>移動基地局ＣＡＤ図面データ入力受</td>
+				</tr>
+				<tr>
+					<td class="time">2001年08月</td>
+					<td>業務拡張のため東京都豊島区東池袋に移転</td>
+				</tr>
+				<tr>
+					<td class="time">2003年</td>
+					<td>通信建設会社よりグローバルネットワーク構築に伴う調査業務受注</td>
+				</tr>
+				<tr>
+					<td class="time">2005年</td>
+					<td>通信工事工事会社より光芯線管理システム開発受</td>
+				</tr>
+				<tr>
+					<td class="time">2006年</td>
+					<td>不動産管理会社より路線価データ収集作業受注</td>
+				</tr>
+				<tr>
+					<td class="time">2007年</td>
+					<td>特定用途向けＣＡＤデータ変換ソフト開発販売開始</td>
+				</tr>
+				<tr>
+					<td class="time"></td>
+					<td>通信線路設計業務受注、サハリン２プロジェクト参画</td>
+				</tr>
+				<tr>
+					<td class="time"></td>
+					<td>物品在庫管理システム開発受注</td>
+				</tr>
+					<td class="time">2008年</td>
+					<td>光芯線管理データ業務受注</td>
+				</tr>
+				<tr>
+					<td class="time">2009年</td>
+					<td>物品在庫管理システム保守業務受注</td>
+				</tr>
+				<tr>
+					<td class="time"></td>
+					<td>電柱管理システム支援業務受注</td>
+				</tr>
+				<tr>
+					<td class="time">2010年</td>
+					<td>光芯線管理システム保守業務受注</td>
+				</tr>
+			</table>
+			<br><br>
+			
+			<div class="contents-line"></div>
+			<h3>コンタクト</h3>
+			<p>
+			■　JR山手線 池袋駅東口より徒歩８分<br>
+			■　東京都豊島区東池袋一丁目48番10号 25山京ビル8F<br>
+			■　TEL:03-5960-6848 / FAX:03-5960-6855<br>
+			</p>
+			
+			<a href="http://goo.gl/maps/CwF2S" target="_blank"><img width="625" height="350" frameborder="0" src="img/map.jpg" alt="Netbrain-map"></a>
+			<p><a href="http://goo.gl/maps/CwF2S" target="_blank">地図をクリックしてGoogleマップを表示</a></p>
 
-たとえ全財産を貧しい人に分け与え
-たとえ賞賛を受けるために自分の身を引き渡しても
-愛がなければ私には何の益にもならない
-
-愛は寛容なもの 慈悲深いものは愛
-愛は妬まず昂ぶらず誇らない
-見苦しい振る舞いをせず 自分の利益を求めず
-怒らず 人の悪事を数えたてない
-
-愛は決して滅びさることはない
-予言の賜物ならば廃りもしよう
-不思議な言葉ならばやみもしよう
-知識ならば無用となりもしよう
-
-我々が知るのは一部分
-また預言するのも一部分であるゆえに
-完全なものが到来するとき
-部分的なものは廃れさる
-
-私は幼い子供であったとき
-幼い子供のように語り
-幼い子供のように考え
-幼い子供のように思いをめぐらした
-ただ 一人前のものになった時 幼い子供のことはやめにした
-
-我々が今見ているのは ぼんやりと鏡に写っているもの
-そのときにみるのは 顔と顔をあわせてのもの
-私が今知っているのは一部分
-その時には自分がすでに完全に知られているように
-私は完全に知るようになる
-
-だから 引き続き残るのは 信仰 希望 愛 この３つ
-このうち もっとも優れているのは 愛
-
-最高の道である愛
-たとえ人間の不思議な言葉
-天使の不思議な言葉を話しても
-愛がなければ私は鳴る銅鑼 響くシンバル
-
-たとえ予言の賜物があり
-あらゆる神秘 あらゆる知識に通じていても
-愛がなければ私は何者でもない
-
-たとえ全財産を貧しい人に分け与え
-たとえ賞賛を受けるために自分の身を引き渡しても
-愛がなければ私には何の益にもならない
-
-愛は寛容なもの 慈悲深いものは愛
-愛は妬まず昂ぶらず誇らない
-見苦しい振る舞いをせず 自分の利益を求めず
-怒らず 人の悪事を数えたてない
-
-愛は決して滅びさることはない
-予言の賜物ならば廃りもしよう
-不思議な言葉ならばやみもしよう
-知識ならば無用となりもしよう
-
-</P>
 		</div>
-		<div class="body-right">
-<p>
-古今東西、いろんな神様がございます。外国の神様、キリスト教やイスラム教の神様なんかは人間どもの雑事を一手に引き受けて、全責任を負ってらっしゃるそうで、まことにご苦労な話でございますな。
 
-　そこへ行きますと、日本の国の神様はこれはうってかわって権限の一極集中ということはございません。一応、総理大臣のような神様はいらっしゃるんでございますが、さて、日常の細々としたことは、というとそれぞれ担当の神様が控えてらっしゃって、すべてそちらにお任せでございます。中でも縁結びなんか、合議制で決められるんですな。昔は神無月と申しました。全国の神様が出雲へ集まって、一ヶ月にわたる会議を開きます。全国縁結び連絡協議会ですな。若い男女のどれとどれをくっつけるか、ここで話し合って決める。だから、妙なのとくっつけられたり、三角関係になったりしても文句を言っていく先がどうもハッキリいたしません。ま、今も昔も、上つ方のありようは似たようなものの様でございます。
 
-　ま、そんなこんなで縁あって夫婦ができあがります。やがて．．．えぇと．．．まあ、いろんなことをやっている間に、めでたく御懐妊ということになる。十月十日たちますてぇと、おぎゃあとベビーが生まれて参るという寸法でございます。
-
-　さて、めでたくやや子が誕生という段になりますと、今も昔も変わらず、最初に親御さんが悩まされるのが、お子様のお名前ですな。こればっかりは本人に相談するわけにも参りません。名前にもその時々の流行というモノがありますから、古臭い名前はいやだ、といって派手過ぎるのも品が無いし、平凡なのは可哀相だけど、妙な名をつけてあとで怨まれてもつまらないし．．．などといろんな事を考えまして、結局誰かに相談しよう、なんてことになりますな。
-
-　よく当たると評判の易者のところへいく、近所の物知りの御隠居に相談する、国のおじいちゃん、おばあちゃんにたずねてみる．．．いろいろございますが、昔はてぇと、旦那寺の和尚さんに名付け親になってもらうなんてことがよくありましたそうで．．．
-</P>
-
-		</div>	
 	</div>
 	  <div class="modal-footer">
 		<a href="#" class="btn" data-dismiss="modal">Close</a>
@@ -222,11 +241,57 @@ Description: Nothing special.
 			<div class="imageB-2 fullsize" style="background:url(img/scene/099.jpg) no-repeat center center;"></div>
 		</div>
 		<div class="body-left">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+		<h3>"私たちにできること。"</h3>
+		<p>株式会社ネットブレインは、クライアントの要望に応えるITソリューションサービスを提供致します。
+			IT技術の進歩は非常にスピーディーであり、どのように業務をシステム化してよいのか?
+			どのソフトウェアを使用すれば最も的確に業務が行われるのか?　多くの会社が頭を抱えるポイントです。
+			去年に使用されていたソフトウェアが、次の年には全く別の高性能なソフトウェアで置き換えられていたり、
+			最新のクラウドサービスを利用し、業務をより効率よく行いたいと考えていても、
+			経験のない自分たちには使いこなすための時間がないとお困りではありませんか？
+			そのような時は私たち、ネットブレインにお任せ下さい。
+			ネットブレインには、多岐に渡るシステム開発&導入経験を持つエンジニアが多く所属しております。
+			迅速、かつ的確にリクエストに応えるITソリューションサービスを提供致します。
+			システム開発30年以上のベテランエンジニア、
+			最新の開発ツールを使いこなすルーキーエンジニア、
+			プロジェクトを取りまとめ円滑に進行させるマネージャー、
+			ネットブレインのエンジニアがお客様の "ITシステムでこんな事がしたい!!" という要望に全力で応えます。
+</P>
 		</div>
 		<div class="body-right">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-		</div>	
+			<p style="font-weight:bold;">■ 業務事例</p>
+			<p>
+			ネットワークサーバー構築業務, 通信系インフラシステム設計業務<br>
+			海外通信コンサルティング業務, IT関連システム設計・開発業務<br>
+			データーベース構築業務, データ入力業務
+			</p>
+			<p style="font-weight:bold;">■ 得意分野</p>
+			<p>
+			IT（情報通信）分野における, システムソリューション<br>
+            インタネット／イントラネット構築業務<br>
+			通信インフラの設計及び保守, データベース作成<br>
+			ISP・通信インフラ設計
+			</p>
+			<p style="font-weight:bold;">■ 得意技術</p>
+			<p>
+			● OS:　UNIX,　Windows,　Linux<br>
+			● DB:　Oracle,　DB2,　SQR Server, Sybase<br>
+			● プログラム言語:　Java, C/C++,　VC++,　VB,　PL/SQL,<br>COBOL,　ASP,　Perl,　PHP,　PRG
+			</p>
+			<br><br><br>
+		</div>
+		
+		<div class="body-below">
+
+			<div class="contents-line"></div>
+			
+			<h3>企業方針</h3>
+			<p>私たちは、通信とコンピュータを融合したシステムソリューション技術で社会に貢献するとともに、お客さまの利便性向上のため、<br>
+			たゆまない努力を続け、光通信ケーブルの保守管理業務については、低廉で高品質でほかに真似のできないシステム造りを目指します。<br>
+			社内にあっては、風通しのよい組織、家族的雰囲気のもとで、社員育成にあたります。また、法令を遵守（コンプライアンス）し、<br>
+			個人の基本的人権を尊重します。</p>
+		
+		</div>
+
 	</div>
 	  <div class="modal-footer">
 		<a href="#" class="btn" data-dismiss="modal">Close</a>
@@ -245,19 +310,28 @@ Description: Nothing special.
 			<div class="imageC-1 fullsize" style="background:url(img/scene/013.jpg) no-repeat center center;"></div>
 			<div class="imageC-2 fullsize" style="background:url(img/scene/026.jpg) no-repeat center center;"></div>
 		</div>
-		<div class="body-left">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+		<div class="body-normal">
+		
+			<h3>中途採用情報</h3>
+			<p>
+			ソフトウェア開発経験のある方、またはプログラミングをやりたいと思う方は、まずはお電話ください。<br>
+			向上心さえあればソフトウェア開発未経験でも歓迎致します。<br>
+			ネットブレインは個人の能力を尊重し、個性の発揮できるチームプレイを重視しております。<br>
+			また自社で独自のトレーニングを行い、長く、安心して会社に在籍してもらえるメンバーの育成を方針としています。<br>
+			<br>
+			03-5960-6848　担当：齊藤までご連絡下さい。<br>
+			メールの場合はこちらまで、<a href="mailto:nbi@net-brain.co.jp">mail:nbi@net-brain.co.jp</a><br>
+			<br>
+			データ入力要員は、只今募集していません。<br>
+		
 		</div>
-		<div class="body-right">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-		</div>	
 	</div>
 	  <div class="modal-footer">
 		<a href="#" class="btn" data-dismiss="modal">Close</a>
 	  </div>
 	</div>
 <!-- end sub-page -->
-	
+
 <!-- start page -->
 <div id="wrapper">
 
@@ -278,9 +352,13 @@ Description: Nothing special.
 		
 		<!-- CSS3 gallery content -->
 		<div id="gallery-box" class="gallery-box">
+			<!-- 3D image for modern browser -->
 			<div class="sub-gallery-box">
 				<div class="3d-gallery">
 					<div class="dg-wrapper">
+						<a data-toggle="modal" href="#Service-page"><img src="img/3Dgallery/gallery01.jpg" alt="Service"><div>事業紹介</div></a>
+						<a data-toggle="modal" href="#Recriut-page"><img src="img/3Dgallery/gallery02.jpg" alt="Recriut"><div>採用情報</div></a>
+						<a data-toggle="modal" href="#Company-page"><img src="img/3Dgallery/gallery03.jpg" alt="Company"><div>会社案内</div></a>
 						<a data-toggle="modal" href="#Service-page"><img src="img/3Dgallery/gallery01.jpg" alt="Service"><div>事業紹介</div></a>
 						<a data-toggle="modal" href="#Recriut-page"><img src="img/3Dgallery/gallery02.jpg" alt="Recriut"><div>採用情報</div></a>
 						<a data-toggle="modal" href="#Company-page"><img src="img/3Dgallery/gallery03.jpg" alt="Company"><div>会社案内</div></a>
@@ -290,37 +368,33 @@ Description: Nothing special.
 						<span class="dg-next"></span>
 					</nav>
 				</div>
-				<div id="slides">
-					<div class="slides_container">
-						<div class="slide">
-							<a data-toggle="modal" href="#Service-page"><img src="img/3Dgallery/gallery01.jpg" width="482" height="316" alt="Service"></a>
-							<div class="caption" style="bottom:0">
-								<p>事業紹介</p>
-							</div>
-						</div>
-						<div class="slide">
-							<a data-toggle="modal" href="#Recriut-page"><img src="img/3Dgallery/gallery02.jpg" width="482" height="316" alt="Recriut"></a>
-							<div class="caption">
-								<p>採用情報</p>
-							</div>
-						</div>
-						<div class="slide">
-							<a data-toggle="modal" href="#Company-page"><img src="img/3Dgallery/gallery03.jpg" width="482" height="316" alt="Company"></a>
-							<div class="caption">
-								<p>会社案内</p>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="prev"><img src="img/3Dgallery/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
-					<a href="#" class="next"><img src="img/3Dgallery/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
-				</div>
 			</div>
-		</div>
+		</div>	
 		
 		<br style="clear: both;" >
 	</div>
 </div>
 <!-- end page -->
+
+<!-- Start 2D-gallery -->
+<div id="2D-gallery" class="sliderkit carousel-demo1">
+	<div class="sliderkit-nav">
+		<div class="sliderkit-nav-clip">
+			<ul>
+				<li><a data-toggle="modal" href="#Service-page" title="事業紹介"><img src="img/3Dgallery/gallery01.jpg" alt="Service" /></a></li>
+				<li><a data-toggle="modal" href="#Recriut-page" title="採用情報"><img src="img/3Dgallery/gallery02.jpg" alt="Recriut" /></a></li>
+				<li><a data-toggle="modal" href="#Company-page" title="会社案内"><img src="img/3Dgallery/gallery03.jpg" alt="Company" /></a></li>
+				<li><a data-toggle="modal" href="#Service-page" title="事業紹介"><img src="img/3Dgallery/gallery01.jpg" alt="Service" /></a></li>
+				<li><a data-toggle="modal" href="#Recriut-page" title="採用情報"><img src="img/3Dgallery/gallery02.jpg" alt="Recriut" /></a></li>
+				<li><a data-toggle="modal" href="#Company-page" title="会社案内"><img src="img/3Dgallery/gallery03.jpg" alt="Company" /></a></li>
+			</ul>
+		</div>
+		<div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-prev"><a href="#" title="サムネイルを左にスライドします"><span>Previous</span></a></div>
+		<div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next"><a href="#" title="サムネイルを右にスライドします"><span>Next</span></a></div>
+	</div>
+</div>
+<!-- // end of carousel-demo1 -->
+
 
 <!-- start footer -->
 <footer class="global">
@@ -356,10 +430,10 @@ Description: Nothing special.
 
 	<div id="footerBtm" class="clearfix">
 		<ul class="navi clearfix">
-			<li><a href="#">お問い合わせ</a></li>
+			<li><a data-toggle="modal" href="#Company-page">お問い合わせ</a></li>
 			<li><a data-toggle="modal" href="#Recriut-page">リクルート</a></li>
-			<li><a href="#">プライバシーポリシー</a></li>
-			<li><a href="#">アクセスマップ</a></li>
+			<li><a data-toggle="modal" href="#Service-page">プライバシーポリシー</a></li>
+			<li><a data-toggle="modal" href="#Company-page">アクセスマップ</a></li>
 		</ul>
 
 		<p id="copyright">Copyright(C) Net Brain Inc..All rights reserved.</p>
