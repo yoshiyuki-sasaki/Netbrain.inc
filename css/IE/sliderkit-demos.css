@@ -1,0 +1,67 @@
+/** 
+ *  sliderkit-demos.css
+ *	> CSS code for demos
+ *  
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *  
+ *  Copyright (c) 2010-2012 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+/*
+ *  CAROUSEL
+ *  ------------------------------------------------
+ */
+
+/*---------------------------------
+ *  Carousel > Demo #1
+ *---------------------------------*/
+.carousel-demo1{
+	width:1300px;
+	height:296px; 
+	margin:0 auto;
+}
+
+/* Navbar */
+.carousel-demo1 .sliderkit-nav{
+	left:10px;
+	bottom:0;
+	width:1260px;
+	height:276px;
+	padding:10px;
+	background:#282828;
+}
+.carousel-demo1 .sliderkit-nav-clip ul li{
+	float:left;
+	margin:35px 20px 0 0; 
+}
+.carousel-demo1 .sliderkit-nav-clip ul li a{
+	display:block;
+	width:300px;
+	height:276px;
+	overflow:hidden;
+	margin:0;
+	opacity:0.8;
+}
+.carousel-demo1 .sliderkit-nav-clip ul li a:hover{opacity:1;}
+
+/* Buttons */
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-btn{position:absolute;top:0;}
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-btn span{display:none;}
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-btn a{display:block;width:15px;height:296px;background:transparent url("../../img/arrows-h.png") no-repeat center 0;}
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-prev{left:70px;}
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-next{right:70px;}
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-prev a{background-position:-89px center;}
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-next a{background-position:-108px center;}
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-prev a:hover,
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:-126px center;}
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-next a:hover,
+.carousel-demo1 .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-145px center;}
+
+/* Buttons > Disable */
+.carousel-demo1 .sliderkit-btn-disable{opacity:0.3/*can be set to any value until 1*/;cursor:default;}
+

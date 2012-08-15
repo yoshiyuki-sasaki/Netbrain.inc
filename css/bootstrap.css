@@ -4223,6 +4223,16 @@ input[type="submit"].btn.btn-mini {
   overflow-y: auto;
 }
 
+.modal-body  p, ol, ul {
+ font-family:"MS PÉSÉVÉbÉN", "ÉqÉâÉMÉmäpÉS Pro W3", Arial;
+}
+
+.modal-body  h3{
+ letter-spacing: 0px;
+ font-weight:bold;
+}
+
+
 .modal-form {
   margin-bottom: 0;
 }
@@ -5070,6 +5080,42 @@ a.badge:hover {
 	width:47%;
 	margin-right:15px;
 	padding-left:10px;
+}
+
+.modal-body .body-normal{
+	width:75%;
+	margin-left:12.5%;
+}
+
+.modal-body .body-below{
+	float:left;
+	margin-left:2%;
+	width:97%;
+}
+
+.modal-body .contents-line{
+	margin: 10px 0px 30px 0px;
+	border-bottom: 5px solid black;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+.modal-body  table.history{
+	margin-left:12.5%;
+}
+
+
+.modal-body  table.history tr{
+	height:30px;
+}
+
+.modal-body  table.history td.time{
+	width:120px;
 }
 
 
